@@ -29,7 +29,7 @@ export const siteConfig: SiteConfig = {
   version: "1.0.0",
   apkSizeMb: 16.7,
   sha256: "0CE15BCE10742F3BEA515324193ED8FB2DE0EA78DB5025FD09EDA61172EFBE33",
-  dashboardUrl: "https://momcare-admin-dusky.vercel.app",
+  dashboardUrl: "https://momcare-admin-dusky.vercel.app/login",
   siteUrl: "",
   status: "available",
 };
