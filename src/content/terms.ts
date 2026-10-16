@@ -154,7 +154,7 @@ export const terms: LegalDoc = {
       "blocks": [
         {
           "type": "p",
-          "text": "You may delete your account and stop using the App at any time. We reserve the right to suspend or terminate your access to the App without notice if you breach these Terms or engage in conduct that we determine, in our sole discretion, to be harmful to other users or to MomCare."
+          "text": "You may stop using the App at any time and request deletion of your account from App Settings. We reserve the right to suspend or terminate your access to the App without notice if you breach these Terms or engage in conduct that we determine, in our sole discretion, to be harmful to other users or to MomCare."
         }
       ]
     },
@@ -181,8 +181,8 @@ export const terms: LegalDoc = {
           "items": [
             "You own the rights to the photo or have permission to upload it",
             "You will not upload content that is unlawful, offensive, or violates another person's rights",
-            "Uploaded photos remain associated with your account and are visible only to you and any healthcare provider assigned to your care",
-            "You may delete your own uploaded photos at any time from within the App"
+            "Uploaded photos remain associated with your account and are visible only to you, your clinic's admins, and the doctors assigned to you",
+            "You may remove your photos from your gallery at any time; the image file stays stored with our photo storage provider unless you ask us to remove it (see Privacy Policy section 11)"
           ]
         }
       ]
@@ -198,8 +198,8 @@ export const terms: LegalDoc = {
         {
           "type": "list",
           "items": [
-            "Appointment requests are subject to review and approval by the assigned healthcare provider, who may accept, decline, or reschedule a request",
-            "Comments and messages exchanged with your healthcare provider through the App relate to your uploaded Snapshot photos and health information, and are visible to you and that provider",
+            "Appointments are set by your clinic. You can request to cancel an appointment in the App, and the clinic approves or declines the request",
+            "Comments and messages exchanged with your healthcare provider through the App relate to your uploaded Snapshot photos and health information, and are visible to you, your assigned doctors, and your clinic's admins",
             "MomCare facilitates this communication but does not itself provide medical advice, diagnosis, or treatment — see the Medical Disclaimer above",
             "You are responsible for verifying appointment details directly with your healthcare provider or clinic where appropriate"
           ]
@@ -217,8 +217,7 @@ export const terms: LegalDoc = {
         {
           "type": "contact",
           "items": [
-            "momscare.noreply@gmail.com",
-            "www.momscare.app"
+            "momscare.noreply@gmail.com"
           ]
         }
       ]
@@ -226,6 +225,6 @@ export const terms: LegalDoc = {
   ],
   "footer": [
     "© 2026 MomCare. All rights reserved.",
-    "These Terms were last updated on June 26, 2026."
+    "These Terms were last updated on October 16, 2026."
   ]
 };

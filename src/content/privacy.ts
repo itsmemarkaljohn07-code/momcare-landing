@@ -19,19 +19,19 @@ export const privacy: LegalDoc = {
           "items": [
             {
               "title": "Account Information",
-              "text": "Name, email address, phone number, and password you provide on registration."
+              "text": "Name, username, email address, mobile number, and password you provide on registration."
             },
             {
               "title": "Health Information",
               "text": "Due date, pregnancy week, LMP date, first-time pregnancy status, and clinic details."
             },
             {
-              "title": "Usage Data",
-              "text": "Pages visited, features used, time spent in the App, and interaction patterns."
+              "title": "Your Entries",
+              "text": "Appointments, checklist progress, health readings, and Snapshot photos you add in the App."
             },
             {
               "title": "Device Information",
-              "text": "Device type, operating system, app version, and unique device identifiers."
+              "text": "A notification token for this phone, so the App can send you reminders and messages from your care team."
             }
           ]
         }
@@ -50,9 +50,8 @@ export const privacy: LegalDoc = {
           "items": [
             "Provide and personalise the MomCare experience for your stage of pregnancy",
             "Display accurate week-by-week pregnancy insights and baby development updates",
-            "Send you appointment reminders and health check notifications",
-            "Improve and develop new features based on how users interact with the App",
-            "Ensure the security of your account and detect fraudulent activity",
+            "Send you appointment and checklist reminders, and notifications from your care team",
+            "Keep your account secure, including sign-in and email verification codes",
             "Communicate important updates, changes to our policies, or service announcements",
             "Comply with applicable legal obligations"
           ]
@@ -74,11 +73,11 @@ export const privacy: LegalDoc = {
         {
           "type": "list",
           "items": [
-            "Encrypted in transit using industry-standard TLS/SSL protocols",
-            "Stored in encrypted databases with access controls limited to essential personnel",
+            "Sent over encrypted (HTTPS) connections",
+            "Stored in Google Firebase, which encrypts stored data",
             "Never shared with advertisers, data brokers, or marketing platforms",
             "Retained only for as long as necessary to provide the service or as required by law",
-            "Accessible only to you via your authenticated account"
+            "Visible to you, and to your clinic's admins and the doctors assigned to you"
           ]
         }
       ]
@@ -94,7 +93,7 @@ export const privacy: LegalDoc = {
         {
           "type": "list",
           "items": [
-            "<strong>Service Providers:</strong> Trusted third-party vendors who assist us in operating the App (e.g., cloud hosting, analytics), bound by strict confidentiality agreements",
+            "<strong>Service Providers:</strong> Google Firebase (accounts, data, and notifications), Cloudinary (photo storage), and EmailJS (sending verification codes), under their own terms",
             "<strong>Legal Requirements:</strong> When required to comply with a legal obligation, court order, or government request",
             "<strong>Safety:</strong> To protect the rights, property, or safety of MomCare, our users, or the public",
             "<strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, with notice provided to you"
@@ -108,7 +107,7 @@ export const privacy: LegalDoc = {
       "blocks": [
         {
           "type": "p",
-          "text": "We use limited analytics tools to understand how users interact with our App. This helps us improve performance and user experience. We do not use third-party advertising cookies or cross-site tracking technologies. You may opt out of analytics collection through your device settings or by contacting us."
+          "text": "The App does not use analytics, advertising cookies, or cross-site tracking."
         }
       ]
     },
@@ -118,15 +117,14 @@ export const privacy: LegalDoc = {
       "blocks": [
         {
           "type": "p",
-          "text": "We retain your personal data for as long as your account is active or as needed to provide you with services. If you delete your account:"
+          "text": "We retain your personal data for as long as your account is active or as needed to provide you with services. If you ask us to delete your account:"
         },
         {
           "type": "list",
           "items": [
-            "Your personal profile and health data will be permanently deleted within 30 days",
-            "Anonymised, aggregated usage data may be retained for service improvement purposes",
+            "Your personal profile and health data will be deleted after we confirm the request with your registered email address",
             "Some data may be retained longer if required by applicable law",
-            "You may request data export before deletion by contacting support"
+            "You may request a copy of your data from App Settings, which opens an email to us"
           ]
         }
       ]
@@ -153,7 +151,7 @@ export const privacy: LegalDoc = {
         },
         {
           "type": "p",
-          "text": "To exercise any of these rights, please contact us at <strong>momscare.noreply@gmail.com</strong>. We will respond within 30 days."
+          "text": "To exercise any of these rights, please contact us at <strong>momscare.noreply@gmail.com</strong>. We will respond as soon as we can."
         }
       ]
     },
@@ -178,16 +176,14 @@ export const privacy: LegalDoc = {
         {
           "type": "list",
           "items": [
-            "End-to-end encryption for data in transit (TLS 1.3)",
-            "AES-256 encryption for data at rest",
-            "Regular security audits and penetration testing",
-            "Multi-factor authentication support for your account",
-            "Role-based access controls for our internal teams"
+            "Encrypted (HTTPS) connections for data in transit",
+            "Encryption at rest for data stored by Google Firebase",
+            "Database rules that limit each account to the data its role allows"
           ]
         },
         {
           "type": "p",
-          "text": "While we take every precaution, no method of transmission over the internet is 100% secure. We encourage you to use a strong, unique password and enable any available security features on your account."
+          "text": "While we take every precaution, no method of transmission over the internet is 100% secure. We encourage you to use a strong, unique password."
         }
       ]
     },
@@ -207,18 +203,18 @@ export const privacy: LegalDoc = {
       "blocks": [
         {
           "type": "p",
-          "text": "When you use the Snapshot feature to upload photos, that image — together with any health data recorded at the time of upload — is stored securely and associated with your account. This information is visible to:"
+          "text": "When you use the Snapshot feature to upload photos, that image — together with any health data recorded at the time of upload — is stored on Cloudinary, our photo storage provider, and associated with your account. This information is visible to:"
         },
         {
           "type": "list",
           "items": [
             "You, at any time, through your own account",
-            "A healthcare provider assigned to your care within the App, solely for the purpose of monitoring your pregnancy and communicating with you about your Snapshot uploads"
+            "Your clinic's admins and the doctors assigned to you, solely for the purpose of monitoring your pregnancy and communicating with you about your Snapshot uploads"
           ]
         },
         {
           "type": "p",
-          "text": "Uploaded photos and related comments are never shared with any other party, used for advertising, or made publicly visible. Deleting a photo removes it from your gallery; some records may be retained briefly as described in the Data Retention section above."
+          "text": "Uploaded photos and related comments are never shared with any other party, used for advertising, or posted publicly. Deleting a photo removes it from your gallery and the App's records; the image file stays on Cloudinary. To have the file removed, email us at momscare.noreply@gmail.com."
         }
       ]
     },
@@ -233,8 +229,7 @@ export const privacy: LegalDoc = {
         {
           "type": "contact",
           "items": [
-            "momscare.noreply@gmail.com",
-            "www.momscare.app/privacy"
+            "momscare.noreply@gmail.com"
           ]
         }
       ]
@@ -242,6 +237,6 @@ export const privacy: LegalDoc = {
   ],
   "footer": [
     "© 2026 MomCare. All rights reserved.",
-    "This Privacy Policy was last updated on June 26, 2026."
+    "This Privacy Policy was last updated on October 16, 2026."
   ]
 };
