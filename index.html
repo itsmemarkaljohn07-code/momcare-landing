@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MomCare — Pregnancy companion app for Android</title>
+  <meta name="description" content="MomCare is a pregnancy companion app for Android, connected to your clinic: weekly baby development, daily checklists, appointments, snapshots and a health tracker.">
+  <meta name="theme-color" content="#0c0a10">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MomCare — Pregnancy companion app for Android">
+  <meta property="og:description" content="A pregnancy companion app for Android, connected to your clinic. A capstone project.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="site-config.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="MomCare home">
+        <img src="assets/img/logo.webp" width="36" height="36" alt="">
+        <span>Mom<span class="grad-text">Care</span></span>
+      </a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Menu</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="nav__menu" id="nav-menu" aria-label="Main">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#install">How to install</a></li>
+          <li><a href="#clinics">For clinics</a></li>
+          <li><a class="staff-link js-staff" href="#clinics">Staff sign-in</a></li>
+          <li><span class="js-download" data-size="sm"></span></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="glow glow--hero" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Pregnancy companion for Android</p>
+          <h1>Your pregnancy, <span class="grad-text">with your clinic</span> beside you</h1>
+          <p class="lead">MomCare follows your baby's growth week by week, keeps your checklist, appointments and health readings in one place, and lets your care team see the snapshots you share.</p>
+          <div class="hero__actions">
+            <span class="js-download" data-size="lg"></span>
+            <a class="btn btn--ghost" href="#install">How to install</a>
+          </div>
+          <p class="download-note js-download-note"></p>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="phone phone--back" aria-hidden="true">
+            <img src="assets/screenshots/snapshot-health.webp" width="540" height="1115" alt="" loading="lazy">
+          </div>
+          <div class="phone phone--front">
+            <img src="assets/screenshots/home-week.webp" width="540" height="1115" alt="MomCare home screen showing week 7 of pregnancy, a week selector and an illustration of the baby's development with length and weight.">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 id="features-title">Everything for the weeks ahead</h2>
+          <p>Built around the care you already get from your clinic.</p>
+        </header>
+        <ul class="cards">
+          <li class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span>
+            <h3>Weekly baby development</h3>
+            <p>See how your baby is growing each week, with size and weight for that stage.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1.2 1.2L7 5M3.5 12l1.2 1.2L7 11M3.5 18l1.2 1.2L7 17"/></svg></span>
+            <h3>Daily checklist</h3>
+            <p>A short to-do list for each day, with reminders so nothing slips by.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg></span>
+            <h3>Appointments</h3>
+            <p>Upcoming and past visits with reminders, and a way to request a cancellation.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6H8l1.5-2h5L16 6h1.5A2.5 2.5 0 0 1 20 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+            <h3>Snapshots</h3>
+            <p>Share bump and ultrasound photos and read comments from your care team.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M7.5 12h2.5l1.5-2.5 2 4 1.5-1.5h1.5"/></svg></span>
+            <h3>Health tracker</h3>
+            <p>Log blood pressure, weight, fetal kicks and mood, and look back over recent entries.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H10a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H14a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h6z"/></svg></span>
+            <h3>Insights</h3>
+            <p>Short articles matched to your week and trimester, from checkups to body changes.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="section section--tint" id="screens" aria-labelledby="screens-title">
+      <div class="glow glow--left" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 id="screens-title">A look inside the app</h2>
+          <p>Real screens from the MomCare Android app.</p>
+        </header>
+        <div class="carousel reveal">
+          <ul class="carousel__track" id="carousel-track" tabindex="0" aria-label="App screenshots, scroll horizontally">
+            <li class="shot">
+              <div class="phone"><img src="assets/screenshots/home-week.webp" width="540" height="1115" loading="lazy" alt="Home screen at week 7 with a week selector and an illustration of the baby's development."></div>
+              <p>Weekly development</p>
+            </li>
+            <li class="shot">
+              <div class="phone"><img src="assets/screenshots/snapshot-health.webp" width="540" height="1115" loading="lazy" alt="Snapshot screen, Health Tracker tab: blood pressure, weight, fetal kicks and mood cards above a list of recent logs."></div>
+              <p>Health tracker</p>
+            </li>
+            <li class="shot">
+              <div class="phone"><img src="assets/screenshots/appointments.webp" width="540" height="1115" loading="lazy" alt="Appointments screen listing two upcoming in-person visits: an anomaly scan and a glucose tolerance test."></div>
+              <p>Appointments</p>
+            </li>
+            <li class="shot">
+              <div class="phone"><img src="assets/screenshots/insights.webp" width="540" height="1115" loading="lazy" alt="Insights screen with a featured article for this week, 'Checkups: when, how, and why', and more articles for the trimester."></div>
+              <p>Insights</p>
+            </li>
+            <li class="shot">
+              <div class="phone"><img src="assets/screenshots/profile.webp" width="540" height="1115" loading="lazy" alt="Profile screen with an avatar, pregnancy progress bar, dark mode and account settings."></div>
+              <p>Profile</p>
+            </li>
+          </ul>
+          <div class="carousel__controls">
+            <button class="icon-btn" type="button" data-dir="-1" aria-controls="carousel-track" aria-label="Previous screenshots">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="icon-btn" type="button" data-dir="1" aria-controls="carousel-track" aria-label="Next screenshots">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- For clinics -->
+    <section class="section" id="clinics" aria-labelledby="clinics-title">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">For clinics</p>
+          <h2 id="clinics-title">A web dashboard for your care team</h2>
+          <p class="lead">MomCare comes with a separate web dashboard for clinic admins and healthcare providers. The app and the dashboard share the same records, so the care team sees what patients choose to share.</p>
+          <div class="staff-cta">
+            <a class="btn btn--ghost js-staff" href="#clinics">Staff sign-in</a>
+          </div>
+        </div>
+        <ul class="checks reveal">
+          <li><strong>Snapshots and health readings.</strong> Assigned doctors and clinic admins can see the photos and health logs their patients share.</li>
+          <li><strong>Comments on snapshots.</strong> Doctors and admins reply to a patient's snapshot, and the comment appears in the app.</li>
+          <li><strong>Appointments.</strong> The clinic manages patients' appointments and reviews their cancellation requests.</li>
+          <li><strong>Limited to the clinic.</strong> Other patients cannot see a patient's snapshots, readings or appointments.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How to install -->
+    <section class="section section--tint" id="install" aria-labelledby="install-title">
+      <div class="glow glow--right" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 id="install-title">How to install</h2>
+          <p>MomCare is installed from this page, not from the Google Play Store.</p>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">1</span>
+            <h3>Download the file</h3>
+            <p>Tap the Download button on this page to get the MomCare APK file.</p>
+            <span class="js-download" data-size="sm"></span>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">2</span>
+            <h3>Allow this source</h3>
+            <p>When Android asks, allow installing apps from your browser or file manager.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">3</span>
+            <h3>Open the file</h3>
+            <p>Open the downloaded file from your notifications or Downloads folder and tap Install.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">4</span>
+            <h3>Sign up</h3>
+            <p>Open MomCare, create your account and enter your pregnancy details.</p>
+          </li>
+        </ol>
+        <div class="notice reveal" role="note">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2.5 20h19z M12 10v4.5 M12 17.2v.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p><strong>Play Protect may show a warning.</strong> Because MomCare is not from the Play Store, Android may warn you before installing. Only install MomCare from this page; do not install copies shared elsewhere.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="section section--tight" aria-label="Disclaimer">
+      <div class="container">
+        <p class="disclaimer reveal">MomCare supports but does not replace care from your clinic. This is a capstone project. Do not use it for emergencies.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand" href="#top" aria-label="MomCare, back to top">
+        <img src="assets/img/logo.webp" width="32" height="32" alt="">
+        <span>Mom<span class="grad-text">Care</span></span>
+      </a>
+      <ul class="footer__links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="mailto:momscare.noreply@gmail.com">momscare.noreply@gmail.com</a></li>
+      </ul>
+      <p class="footer__note">Capstone project, BSIT, Northwest Samar State University, S.Y. 2026–2027</p>
+    </div>
+  </footer>
+</body>
+</html>
