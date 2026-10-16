@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* MomCare palette: pink-purple gradient on a near-black background */
+@theme inline {
+  --font-sans: var(--font-nunito), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --color-bg: #0c0a10;
+  --color-bg-tint: #120e18;
+  --color-surface: #18131f;
+  --color-surface-2: #211a2b;
+  --color-line: #31273d;
+  --color-ink: #f5eff8;
+  --color-muted: #bfb3cb;
+  --color-accent-1: #e07eb8;
+  --color-accent-2: #b57fd4;
+  --color-on-accent: #1c0f22;
+  --color-focus: #f6c1e3;
+  --color-warn: #f0b45a;
+  --color-warn-ink: #f1dcc0;
+
+  --ease-soft: cubic-bezier(.2, .7, .2, 1);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: 84px;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-bg text-ink font-sans leading-relaxed overflow-x-clip;
+  }
+  h1, h2, h3 {
+    @apply font-extrabold leading-tight tracking-tight text-balance break-words;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+}
+
+@utility bg-grad {
+  background-image: linear-gradient(120deg, var(--color-accent-1), var(--color-accent-2));
+}
+
+@utility grad-text {
+  background-image: linear-gradient(120deg, var(--color-accent-1), var(--color-accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1160px] px-4 md:px-8;
+  }
+
+  /* Soft radial light behind sections */
+  .glow {
+    @apply pointer-events-none absolute z-0 size-[620px] rounded-full blur-[20px];
+    background: radial-gradient(circle, rgb(224 126 184 / .22), rgb(181 127 212 / .08) 45%, transparent 70%);
+  }
+
+  /* Phone frame around screenshots; the ::before is the camera notch */
+  .phone {
+    @apply relative rounded-[40px] p-[9px];
+    background: linear-gradient(160deg, #3a3342, #1a1620 40%, #2b2532);
+    box-shadow: 0 20px 60px -20px rgb(0 0 0 / .7), inset 0 0 0 1px rgb(255 255 255 / .08);
+  }
+  .phone img { @apply w-full rounded-[32px]; }
+  .phone::before {
+    content: "";
+    @apply absolute top-4 left-1/2 z-[1] h-[18px] w-[26%] -translate-x-1/2 rounded-xl bg-[#0a080d];
+  }
+  .phone--sm { @apply rounded-[32px] p-[7px]; }
+  .phone--sm img { @apply rounded-[26px]; }
+  .phone--sm::before { @apply top-3 h-3.5; }
+
+  /* Gradient check icon for the clinic list */
+  .check-icon {
+    @apply bg-grad inline-block size-6 shrink-0 rounded-full;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1a11 11 0 1 0 0 22 11 11 0 0 0 0-22zm-1.6 15.4-4.3-4.3 1.4-1.4 2.9 2.9 6-6 1.4 1.4z'/%3E%3C/svg%3E") center / contain no-repeat;
+  }
+}
+
+/* Entrance animation: only once JS is running and only if motion is allowed */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-ready .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .6s var(--ease-soft), transform .6s var(--ease-soft);
+  }
+  .reveal-ready .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+  .hover-lift:hover { transform: none !important; }
+}
