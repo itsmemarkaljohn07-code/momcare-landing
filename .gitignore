@@ -12,3 +12,5 @@ next-env.d.ts
 *.keystore
 *.pem
 .env*
+
+!public/downloads/*.apk
