@@ -5,11 +5,14 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const shots = [
-  { src: "/screenshots/home-week.webp", label: "Weekly development", alt: "Home screen at week 7 with a week selector and an illustration of the baby's development." },
-  { src: "/screenshots/snapshot-health.webp", label: "Health tracker", alt: "Snapshot screen, Health Tracker tab: blood pressure, weight, fetal kicks and mood cards above a list of recent logs." },
-  { src: "/screenshots/appointments.webp", label: "Appointments", alt: "Appointments screen listing two upcoming in-person visits: an anomaly scan and a glucose tolerance test." },
-  { src: "/screenshots/insights.webp", label: "Insights", alt: "Insights screen with a featured article for this week, 'Checkups: when, how, and why', and more articles for the trimester." },
-  { src: "/screenshots/profile.webp", label: "Profile", alt: "Profile screen with an avatar, pregnancy progress bar, dark mode and account settings." },
+  { src: "/screenshots/home-week.webp", label: "Weekly development", alt: "Home screen in the MomCare app at week 24, with a week selector, an illustration of the baby and its length and weight." },
+  { src: "/screenshots/home-checklist.webp", label: "Daily checklist", alt: "Home screen in the MomCare app showing upcoming appointments, a health tracker summary and the daily checklist." },
+  { src: "/screenshots/appointments.webp", label: "Appointments", alt: "Appointments screen in the MomCare app with two upcoming visits, one expanded with doctor, location, notes and a Request cancellation button." },
+  { src: "/screenshots/appointment-request.webp", label: "Request an appointment", alt: "Request an appointment form in the MomCare app with appointment type, preferred date and time, reason, notes, icon and colour." },
+  { src: "/screenshots/snapshot-health.webp", label: "Health tracker", alt: "Health Tracker screen in the MomCare app with blood pressure, weight, fetal kicks and mood cards, recent logs and a note on who can see them." },
+  { src: "/screenshots/snapshot-gallery.webp", label: "Photo gallery", alt: "Photo gallery screen in the MomCare app with an add-photo panel and captioned ultrasound and bump photos." },
+  { src: "/screenshots/insights.webp", label: "Insights", alt: "Insights screen in the MomCare app with this week's featured article and popular articles for the trimester." },
+  { src: "/screenshots/profile.webp", label: "Profile", alt: "Profile screen in the MomCare app with an avatar, pregnancy progress bar, dark mode and account settings." },
 ];
 
 const btnClass =

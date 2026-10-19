@@ -78,7 +78,7 @@ export default function Home() {
                 width={540}
                 height={1115}
                 priority
-                alt="MomCare home screen showing week 7 of pregnancy, a week selector and an illustration of the baby's development with length and weight."
+                alt="Home screen in the MomCare app at week 24, with a week selector, an illustration of the baby and its length and weight."
               />
             </div>
           </div>
