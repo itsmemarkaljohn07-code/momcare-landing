@@ -25,10 +25,10 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  apkUrl: "/downloads/momcare-1.2.0.apk",
-  version: "1.2.0",
+  apkUrl: "/downloads/momcare-1.3.0.apk",
+  version: "1.3.0",
   apkSizeMb: 16.7,
-  sha256: "929ed8d547a1fc06e39d4cb4ae77253d7ccd2932605c2dbdcc49fa64e6394ec1",
+  sha256: "b10a0d7097dcca4060974de42832afadbdb0f173825fd74df67e227b05e5ed7d",
   dashboardUrl: "https://momcare-admin-dusky.vercel.app/login",
   siteUrl: "",
   status: "available",
