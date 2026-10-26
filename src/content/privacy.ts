@@ -19,7 +19,7 @@ export const privacy: LegalDoc = {
           "items": [
             {
               "title": "Account Information",
-              "text": "Name, username, email address, mobile number, and password you provide on registration."
+              "text": "Name (first, middle and last), birthday, home address (province, city or municipality, barangay, and purok or street), username, email address, mobile number, and password you provide on registration."
             },
             {
               "title": "Health Information",
@@ -237,6 +237,6 @@ export const privacy: LegalDoc = {
   ],
   "footer": [
     "© 2026 MomCare. All rights reserved.",
-    "This Privacy Policy was last updated on October 16, 2026."
+    "This Privacy Policy was last updated on October 26, 2026."
   ]
 };
